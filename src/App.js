@@ -1,5 +1,5 @@
 import './App.css'
-import NavigationBar from './components/navigation/NavigationBar'
+import Navbar from './components/navigation/Navbar'
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 import Home from './contents/Home';
 import HomePage from './contents/HomePage';
@@ -10,7 +10,7 @@ const App= () => {
         <Router>
         <div className='App'>
             
-                <NavigationBar />
+                <Navbar />
                 <Routes>
                     <Route path="/" element={<Home />}>
                         <Route index element={<HomePage/>} />
