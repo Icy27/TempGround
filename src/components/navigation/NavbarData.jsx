@@ -7,13 +7,13 @@ export const NavbarData = [
     {
         title:'HomePage',
         path:'/',
-        icon:<AiIcons.AiFillHome />,
+        icon:<AiIcons.AiOutlineHome />,
         cName: 'nav-text'
     },
     {
         title:'About',
         path:'/About',
-        icon:<IoIcons.IoMdHelpCircle />,
+        icon:<AiIcons.AiOutlineExclamationCircle />,
         cName: 'nav-text'
     }
 ]

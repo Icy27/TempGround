@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import * as FaIcons from "react-icons/fa";
+import * as MdIcons from "react-icons/md";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { NavbarData } from "./NavbarData";
@@ -13,15 +14,14 @@ const NavigationBar = () => {
   const showSidebar = () => setSidebar(!sidebar);
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff" }}>
         <div className={sidebar ? "nav-container active" : "nav-container"}>
           <div className="nav-header">
             <Link to="#" className="logo">
-              <FaIcons.FaBars onClick={showSidebar} />
+              <MdIcons.MdPlayLesson onClick={showSidebar} />
             </Link>
             <div className="name">
-              <span>Template</span>
-              <span>PlayGround</span>
+              <span className="first">Template</span>
+              <span className="second">PlayGround</span>
             </div>
           </div>
 
@@ -39,7 +39,6 @@ const NavigationBar = () => {
             </ul>
           </nav>
         </div>
-      </IconContext.Provider>
     </>
   );
 };
