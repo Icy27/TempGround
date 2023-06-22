@@ -1,12 +1,9 @@
 import "./Navbar.css";
-import * as FaIcons from "react-icons/fa";
 import * as MdIcons from "react-icons/md";
-import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { NavbarData } from "./NavbarData";
+import { NavbarData } from "../../data/NavbarData";
 
 import React, { useState } from "react";
-import { IconContext } from "react-icons";
 
 const NavigationBar = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -16,9 +13,9 @@ const NavigationBar = () => {
     <>
         <div className={sidebar ? "nav-container active" : "nav-container"}>
           <div className="nav-header">
-            <Link to="#" className="logo">
+            <div className="logo">
               <MdIcons.MdPlayLesson onClick={showSidebar} />
-            </Link>
+            </div>
             <div className="name">
               <span className="first">Template</span>
               <span className="second">PlayGround</span>
@@ -31,7 +28,6 @@ const NavigationBar = () => {
                 <li key={index} className={item.cName}>
                   <Link to={item.path}>
                     <div className="icon">{item.icon}</div>
-
                     <span>{item.title}</span>
                   </Link>
                 </li>
