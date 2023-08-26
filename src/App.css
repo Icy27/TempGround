@@ -34,14 +34,20 @@ h1{
     display: flex;
     background-color: #FFF;
     border-radius: 6px;
-    justify-content: space-between;
     align-items:center;
+}
+
+.TopBar:first-child{
+    flex: 1 0 0;
 }
 
 .Main{
     display: flex;
     margin-top: 30px;
     background-color: blanchedalmond;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 
 body{

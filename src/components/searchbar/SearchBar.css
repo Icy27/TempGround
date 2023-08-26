@@ -7,13 +7,13 @@
 .logo{
     display: flex;
     font-size: 25px;
+    align-items: center;
 }
 
 input{
     display: flex;
     border:none;
     outline: none;
-    width: 100%;
     background-color: transparent;
     font-size: 18px;
 }

@@ -1,8 +1,13 @@
 import React from 'react'
+import './HomePage.css'
 
 function HomePage() {
   return (
-    <div>HomePage</div>
+    <div className='container'>
+      <span>
+        Welcome To Template Play Ground
+      </span>
+    </div>
   )
 }
 
